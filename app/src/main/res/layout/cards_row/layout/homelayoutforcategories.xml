@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/framefortrendingevents"
+    android:elevation="15dp"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <include layout="@layout/categories_of_events_layout"
+        android:id="@+id/tech" />
+    <include layout="@layout/categories_of_events_layout"
+        android:id="@+id/cultural"/>
+        </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <include
+            android:id="@+id/lite"
+            layout="@layout/categories_of_events_layout" />
+        <include layout="@layout/categories_of_events_layout"
+        android:id="@+id/sport"/>
+</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <include layout="@layout/categories_of_events_layout"
+        android:id="@+id/others"/>
+
+        <include layout="@layout/categories_of_events_layout"
+            android:id="@+id/notvisible"
+            android:visibility="invisible"/>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>

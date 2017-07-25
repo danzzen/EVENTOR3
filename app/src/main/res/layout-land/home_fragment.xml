@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:orientation="vertical"
+        android:translationZ="10dp"
+        android:elevation="10dp">
+
+<include layout="@layout/layout_for_trending_events"/>
+        <include layout="@layout/homelayoutforcategories"
+            android:id="@+id/categorieslayout"/>
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="56dp"-->
+            <!--android:layout_gravity="bottom|end" />-->
+
+    </LinearLayout>
+
+ </android.support.v4.widget.NestedScrollView>
